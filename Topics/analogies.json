@@ -4,7 +4,6 @@
     "category": "Analogies",
     "tabs": [
         {
-            "icon": "handPaper",
             "content": [
                 {
                     "type": "remote-code",
@@ -13,7 +12,6 @@
             ]
         },
         {
-            "icon": "handPaper",
             "content": [
                 {
                     "type": "remote-code",

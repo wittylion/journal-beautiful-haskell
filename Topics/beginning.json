@@ -17,7 +17,7 @@
     },
     {
         "title": "Count File Lines",
-        "icon": "handPaper",
+        "icon": "listOl",
         "category": "Beginning",
         "tabs": [
             {

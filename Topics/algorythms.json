@@ -9,7 +9,7 @@
                 "content": [
                     {
                         "type": "remote-code",
-                        "data": "https://raw.githubusercontent.com/SergAtGitHub/Haskell-on-Flutter/master/assets/Code/Algorythms/binary-search.hs"
+                        "data": "https://raw.githubusercontent.com/wittylion/journal-beautiful-haskell/master/Code/Algorythms/binary-search.hs"
                     }
                 ]
             }
@@ -25,7 +25,7 @@
                 "content": [
                     {
                         "type": "remote-code",
-                        "data": "https://raw.githubusercontent.com/SergAtGitHub/Haskell-on-Flutter/master/assets/Code/Algorythms/Merge%20Sort/merge-sort.hs"
+                        "data": "https://raw.githubusercontent.com/wittylion/journal-beautiful-haskell/master/Code/Algorythms/Merge%20Sort/merge-sort.hs"
                     }
                 ]
             },
@@ -33,7 +33,7 @@
                 "content": [
                     {
                         "type": "remote-code",
-                        "data": "https://raw.githubusercontent.com/SergAtGitHub/Haskell-on-Flutter/master/assets/Code/Algorythms/Merge%20Sort/merge-sort2.hs"
+                        "data": "https://raw.githubusercontent.com/wittylion/journal-beautiful-haskell/master/Code/Algorythms/Merge%20Sort/merge-sort2.hs"
                     }
                 ]
             }

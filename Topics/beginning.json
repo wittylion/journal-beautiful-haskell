@@ -30,5 +30,20 @@
                 ]
             }
         ]
+    },
+    {
+        "title": "Strings",
+        "icon": "format_align_justify",
+        "category": "Beginning",
+        "tabs": [
+            {
+                "content": [
+                    {
+                        "type": "remote-code",
+                        "data": "https://raw.githubusercontent.com/wittylion/journal-beautiful-haskell/master/Code/Beginning/strings.hs"
+                    }
+                ]
+            }
+        ]
     }
 ]

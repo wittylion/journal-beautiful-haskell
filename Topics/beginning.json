@@ -8,6 +8,14 @@
                 "icon": "handPaper",
                 "content": [
                     {
+                        "type": "raw-code",
+                        "data": "main = putStrLn \"Hello, world!\""
+                    },
+                    {
+                        "type": "raw-markdown",
+                        "data": "One more example that reads an input from user:"
+                    },
+                    {
                         "type": "remote-code",
                         "data": "https://raw.githubusercontent.com/wittylion/journal-beautiful-haskell/master/Code/Beginning/hello-world.hs"
                     }

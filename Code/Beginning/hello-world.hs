@@ -1,3 +1,6 @@
--- HELLO WORLD --
+-- INCLUDE INPUT FROM USER --
 
-main = putStrLn "Hello, world!"
+main = do  
+    putStrLn "Please enter your name:"  
+    name <- getLine  
+    putStrLn ("Hello " ++ name)  

@@ -3,7 +3,7 @@
 -- Multiline string:
 -- make string more readable
 -- use '\' character. Be carefule, it does
--- not add new line by defualt.
+-- not add new line by default.
 sql = "\
 \SELECT * \
 \FROM companies \

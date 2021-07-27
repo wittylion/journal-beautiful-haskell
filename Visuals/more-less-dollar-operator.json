@@ -1,0 +1,100 @@
+[
+    {
+        "title": "Operator <$>",
+        "icon": "transform",
+        "category": "Operators",
+        "tabs": [
+            {
+                "content": [
+                    {
+                        "type": "visual-explanation",
+                        "data": {
+                            "actions": [
+                                [
+                                    "show_overlay",
+                                    "Operator <$>\nJust Change It"
+                                ],
+                                [
+                                    [
+                                        "put_content",
+                                        [
+                                            "main = print candiesToBuy",
+                                            "  where",
+                                            "    friends = 2",
+                                            "    candiesPerFriend = 2",
+                                            "    candiesToBuy = friends * candiesPerFriend"
+                                        ]
+                                    ],
+                                    [
+                                        "show_explanation",
+                                        "Changing a variable is easy:\r\na = 2\r\nb = 2\r\na2 = a * b\r\n\r\nBut what if your variable is wrapped into one of these data things like:\r\na = Just 2",
+                                        "Where do we start?"
+                                    ]
+                                ],
+                                [
+                                    [
+                                        "put_line",
+                                        "We need 4 Snickerses\n"
+                                    ],
+                                    [
+                                        "put_content",
+                                        [
+                                            "main = print candiesToBuy",
+                                            "  where",
+                                            "    friends = Just 2",
+                                            "    candiesPerFriend = 3",
+                                            "    candiesToBuy = (* candiesPerFriend) <$> friends"
+                                        ]
+                                    ],
+                                    [
+                                        "show_explanation",
+                                        "Unfortunately you cannot write like this:\r\na = Just 2\r\nb = 2\r\na2 = a * b\r\n\r\nBut you can:\r\na2 = (*b) <$> a",
+                                        "Can we multiply Just 2 friends?"
+                                    ]
+                                ],
+                                [
+                                    [
+                                        "put_line",
+                                        "We need 6 more Bounties\n"
+                                    ],
+                                    [
+                                        "show_explanation",
+                                        "You know what is data with parameter, right?\r\n\r\nIs the way to give primitives some explanation using a wrapping word like \"Just\" or \"V2D\":\r\ndata Maybe a  =  Nothing | Just a\r\ndata Vector2D = V2D Int Int\r\n\r\nAnd <$> operates on your primitive, ignoring a wrapper.",
+                                        "Just change it!"
+                                    ]
+                                ],
+                                [
+                                    [
+                                        "put_content",
+                                        [
+                                            "main =",
+                                            "  hClose <$> openFile \"a.txt\" WriteMode"
+                                        ]
+                                    ],
+                                    [
+                                        "highlight_row",
+                                        2
+                                    ],
+                                    [
+                                        "show_explanation",
+                                        "When you work with real world things, you have to operate with IO, that wraps meaningful things, like:\r\nIO Handle\r\nIO String\r\n\r\nSo to make some meaningful change just use \"dollars\" - <$>.",
+                                        "Working with IO:"
+                                    ]
+                                ],
+                                [
+                                    "show_explanation",
+                                    "Now you seem to know \"<$>\" operator.\n\nClick on the code to complete this lesson.",
+                                    "Congratulations"
+                                ],
+                                [
+                                    "show_overlay",
+                                    "Now you are master of <$> operator."
+                                ]
+                            ]
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+]

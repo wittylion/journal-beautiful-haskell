@@ -1,6 +1,6 @@
 [
     {
-        "title": "Operator <$>",
+        "title": "Operators <$, <$>, $>",
         "icon": "transform",
         "category": "Operators",
         "tabs": [
@@ -12,7 +12,7 @@
                             "actions": [
                                 [
                                     "show_overlay",
-                                    "Operator <$>\n\nThe Way To Change Wrapped Data"
+                                    "Operators <$, <$>, $>\n\nChange Wrapped Data"
                                 ],
                                 [
                                     [
@@ -55,15 +55,61 @@
                                 [
                                     [
                                         "put_line",
-                                        "We need 6 more Bounties\n"
+                                        "(<$>) :: Functor f => (a -> b) -> f a -> f b\n"
                                     ],
                                     [
                                         "show_explanation",
-                                        "You know what is data with parameter, right?\r\n\r\nIs a word that wraps the primitives, like this:\r\ndata Maybe a  =  Nothing | Just a\r\ndata Vector2D = V2D Int Int\r\n\r\nAnd operator <$> allows to do something with your primitive, ignoring a wrapper.",
+                                        "You know what is Functor, right?\r\n\r\nIs a word that wraps the primitives, like this:\r\ndata Maybe a  =  Nothing | Just a\r\ndata Vector2D = V2D Int Int\r\n\r\nAnd operator <$> allows to do something with your primitive, ignoring a wrapper like Just or V2D.",
+                                        "Is that a Functor?"
+                                    ]
+                                ],
+                                [
+                                    [
+                                        "put_content",
+                                        [
+                                            "main = print candiesToBuy",
+                                            "  where",
+                                            "    friends = 2",
+                                            "    total = Just friends",
+                                            "    candiesPerFriend = 3",
+                                            "    candiesToBuy = (friends * candiesPerFriend) <$ total"
+                                        ]
+                                    ],
+                                    [
+                                        "show_explanation",
+                                        "But what if you know how to compute your value and you don't want to apply function with <$> operator? Just point a value that you want to apply to your Functor with <$ operator.",
                                         "Just change it!"
                                     ]
                                 ],
                                 [
+                                    [
+                                        "put_line",
+                                        "(<$) :: Functor f => a -> f b -> f a\n"
+                                    ],
+                                    [
+                                        "put_content",
+                                        [
+                                            "import Data.Functor",
+                                            "",
+                                            "main = print candiesToBuy",
+                                            "  where",
+                                            "    friends = 2",
+                                            "    total = Just friends",
+                                            "    candiesPerFriend = 3",
+                                            "    candiesToBuy = total $> (friends * candiesPerFriend)"
+                                        ]
+                                    ],
+                                    [
+                                        "show_explanation",
+                                        "It would be easier to read code like: to my functor Vector apply value 1. And in this case we have to use the opposite operator $>. But to use we have to import Data.Functor namespace.",
+                                        "Can we do it prettier?"
+                                    ]
+                                ],
+                                [
+                                    [
+                                        "put_line",
+                                        "($>) :: Functor f => f a -> b -> f b\n"
+                                    ],
                                     [
                                         "put_content",
                                         [
@@ -89,7 +135,8 @@
                                 [
                                     "show_overlay",
                                     "Now you are master of <$> operator."
-                                ]
+                                ],
+                                ["remove_highlighting"]
                             ]
                         }
                     }

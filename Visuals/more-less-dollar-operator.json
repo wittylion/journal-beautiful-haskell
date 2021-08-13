@@ -55,7 +55,7 @@
                                 [
                                     [
                                         "put_line",
-                                        "(<$>) :: Functor f => (a -> b) -> f a -> f b\n"
+                                        "(<$>) :: Functor f => (a -> b) -> f a -> f b\n\n"
                                     ],
                                     [
                                         "show_explanation",
@@ -84,7 +84,7 @@
                                 [
                                     [
                                         "put_line",
-                                        "(<$) :: Functor f => a -> f b -> f a\n"
+                                        "(<$) :: Functor f => a -> f b -> f a\n\n"
                                     ],
                                     [
                                         "put_content",
